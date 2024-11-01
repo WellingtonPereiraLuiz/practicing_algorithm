@@ -7,5 +7,4 @@ for i in range(n):
 
 
 
-git config --global user.email "wellingtonpereiraluiz89@gmail.com"
-git config --global user.name "WellingtonPereiraLuiz"
+
