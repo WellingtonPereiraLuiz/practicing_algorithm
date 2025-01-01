@@ -2,7 +2,7 @@ from tkinter import*
 
 root = Tk()
 
-root.geometry('500x700')
+root.geometry('500x300')
 root.title('Calculadora de IMC')
 root.config(bg='lightblue')
 #Cor e fonte global
@@ -11,14 +11,11 @@ letra = 'white'
 
 resultado = Label(root, text='', fg=letra, bg='lightblue', font=fonte)
 
-def calcular_imc():
-    peso = int(entrada_peso.get())
-    altura = int(entrada_altura.get())
-    print(peso)
-    print(altura)
+def calcular_imc(): 
+    peso = float(entrada_peso.get())
+    altura = float(entrada_altura.get())  / 100
     imc = peso / (altura ** 2)
-    print(imc)
-    resultado.config(text=f'O seu IMC é de: {imc}')
+    resultado.config(text=f'O seu IMC é de: {imc:.2f}')
     resultado.grid(row=3, column=1, pady=15)
 
 label_peso = Label(text='Digite o seu peso.' , fg=letra, bg='lightblue', font=fonte)
