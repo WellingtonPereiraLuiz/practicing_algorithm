@@ -24,7 +24,8 @@ escolha = int(input(('1 - Adicionar valor na pilha\n2 - Remover valor da pilha\n
 if escolha == 1: 
     add = int(input(('Digite o valor que deseja adicionar:')))
     pilha.append(add)
-if escolha == 2: pilha.pop()
+if escolha == 2: 
+    pilha.pop()
 """
 
 #Corrigido pela IA
