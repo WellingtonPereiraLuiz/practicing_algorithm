@@ -26,12 +26,15 @@ if escolha == 1:
     pilha.append(add)
 if escolha == 2: 
     pilha.pop()
-"""
 
-#Corrigido pela IA
+
 print('Pilha atual')
 for i in range(len(pilha)):
     print(pilha[i])
+"""
+
+#Corrigido pela IA
+
 
 pilha = []
 pilha.append(4242)
