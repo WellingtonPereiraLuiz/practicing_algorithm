@@ -78,3 +78,4 @@ root.mainloop()
 #Coloque algumas imagens e trabalhe com elas
 # Implemente a questao da altura e nome, aramazene isso e de a opcao para visualizar o historico de calculos
 #Coloque uma mensagem personalizada para cada nivel de imc, como tais: magro, obeso, morbido e etc...
+    
