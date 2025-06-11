@@ -45,7 +45,7 @@ class ListaDeTarefas:
         nova_tarefa = Tarefa(titulo=titulo, prioridade=prioridade)
         self.tarefas.append(nova_tarefa)
 
-    def marcar_concluida(self, titulo: str):
+    def marcar_tarefa_concluida(self, titulo: str):
         for tarefa in self.tarefas:
             if tarefa.titulo == titulo:
                 tarefa.marcar_concluida()
@@ -57,7 +57,7 @@ class ListaDeTarefas:
             status = "Concluída" if tarefa.concluida else "Pendente"
             print(f"{tarefa.titulo} - Prioridade: {tarefa.prioridade} - Status: {status}")
 
-    def listar_pendentes(self):
-        pendentes = [tarefa for tarefa in self.tarefas if not tarefa.concluida]
-        for tarefa in pendentes:
-            print(f"{tarefa.titulo} - Prioridade: {tarefa.prioridade}")
+    def listar_tarefas_pendentes(self):
+        for tarefa in self.tarefas:
+            if not tarefa.concluida:
+                print(f"{tarefa.titulo} - Prioridade: {tarefa.prioridade}")
