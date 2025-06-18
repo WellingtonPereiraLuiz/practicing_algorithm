@@ -6,16 +6,17 @@
 #minino de ponots sera 0, minino para passar sera 6 e maximo de nota sera 10
 #Tambem mostre quantos alunos passaram e quandos reprovaram em cada sala
 
-# Pergunta a quantidade de alunos por sala
-quantidade_alunos = int(input("Qual é a quantia de alunos por sala? "))
 
-# Exemplo para uma sala (você pode repetir para as outras salas depois)
+
 sala1 = []
+sala2 = []
+sala3 = []
+sala4 = []
 
-for i in range(quantidade_alunos):
-    print(f"\nAluno {i+1}:")
-    notas = []
-    for materia in ["Português", "Matemática", "Física", "Geografia"]:
-        nota = float(input(f"Digite a nota de {materia}: "))
-        notas.append(nota)
-    sala1.append(notas)
+aluno = []
+
+Quantidade_alunos = input(int("Qual e a quantia de alunos por sala?"))
+
+for i in Quantidade_alunos:
+    for c in 4:
+        aluno = input(int("Digite a nota do "))
