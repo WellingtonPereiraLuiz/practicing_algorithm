@@ -7,16 +7,32 @@
 #Tambem mostre quantos alunos passaram e quandos reprovaram em cada sala
 
 
+sala = []
+salas = []
+print("Bem vindo ao sistema de media dos alunos")
+alunos_por_sala = {'nome': '', 'nota1': 0, 'nota2': 0, 'nota3': 0, 'nota4': 0, 'media': 0, 'situacao': ''}
 
-sala1 = []
-sala2 = []
-sala3 = []
-sala4 = []
+for i in range(2):
+    Quantidade_alunos = int(input(f"Qual e a quantia de alunos na sala{i + 1}?"))
+    for t in range(Quantidade_alunos):
+        aluno = alunos_por_sala.copy()
+        aluno["nome"] = input(f'Digite o nome do aluno:')
+        aluno["nota1"] = float(input(f'Digite a nota de matematica:'))
+        aluno["nota2"] = float(input(f'Digite a nota de ingles:'))
+        aluno["nota3"] = float(input(f'Digite a nota de portugues:'))
+        aluno["nota4"] = float(input(f'Digite a nota de geografia:'))
 
-aluno = []
+        aluno["media"] = (aluno["nota1"] + aluno["nota2"] + aluno["nota3"] + aluno["nota4"]) / 4
+        
+        if aluno['media'] >= 6:
+            aluno['situacao'] = 'aprovado'
+        else:
+            aluno['situacao'] = 'reprovado'
 
-Quantidade_alunos = input(int("Qual e a quantia de alunos por sala?"))
+        
+    salas.append(sala)
 
-for i in Quantidade_alunos:
-    for c in 4:
-        aluno = input(int("Digite a nota do "))
+
+print(alunos_por_sala)
+print(salas)
+
